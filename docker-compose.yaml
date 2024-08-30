@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  torchserve-mar:
+    image: pytorch/torchserve:latest-cpu
+    ports:
+      - "8080:8080"
+      - "8081:8081" 
+    volumes:
+      - ./:/codes
+  mnistapp:
+    build: app/
+    ports:
+      - "9696:9696"

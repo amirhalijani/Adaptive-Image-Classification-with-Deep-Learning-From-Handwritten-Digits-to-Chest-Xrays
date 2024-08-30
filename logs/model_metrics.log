@@ -1,0 +1,6 @@
+2024-08-23T21:03:41,517 - HandlerTime.ms:54.37|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:99e395de-3b0f-4761-b387-c70d25949d0a,timestamp:1724447021
+2024-08-23T21:03:41,521 - PredictionTime.ms:54.78|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:99e395de-3b0f-4761-b387-c70d25949d0a,timestamp:1724447021
+2024-08-23T21:03:48,787 - HandlerTime.ms:13.85|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:d8c3ea37-10c3-4440-b845-51d78ea712ef,timestamp:1724447028
+2024-08-23T21:03:48,790 - PredictionTime.ms:14.09|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:d8c3ea37-10c3-4440-b845-51d78ea712ef,timestamp:1724447028
+2024-08-23T21:03:53,419 - HandlerTime.ms:11.18|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:aaf44d44-9531-4805-a4a4-c39a298a56c4,timestamp:1724447033
+2024-08-23T21:03:53,421 - PredictionTime.ms:11.35|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:aaf44d44-9531-4805-a4a4-c39a298a56c4,timestamp:1724447033

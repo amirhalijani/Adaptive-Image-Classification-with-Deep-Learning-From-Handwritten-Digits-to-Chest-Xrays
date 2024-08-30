@@ -1,0 +1,1028 @@
+2024-08-23T21:03:25,547 [DEBUG] main org.pytorch.serve.util.ConfigManager - xpu-smi not available or failed: Cannot run program "xpu-smi": error=2, No such file or directory
+2024-08-23T21:03:25,547 [DEBUG] main org.pytorch.serve.util.ConfigManager - xpu-smi not available or failed: Cannot run program "xpu-smi": error=2, No such file or directory
+2024-08-23T21:03:25,556 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-08-23T21:03:25,556 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-08-23T21:03:25,576 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-08-23T21:03:25,576 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-08-23T21:03:25,678 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+2024-08-23T21:03:25,678 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+2024-08-23T21:03:25,898 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.1
+TS Home: /home/venv/lib/python3.9/site-packages
+Current directory: /codes
+Temp directory: /home/model-server/tmp
+Metrics config path: /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 0
+Number of CPUs: 12
+Max heap size: 3984 M
+Python executable: /home/venv/bin/python
+Config file: /home/model-server/config.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /home/model-server/model-store
+Initial Models: mnist=mnist.mar
+Log dir: /codes/logs
+Metrics dir: /codes/logs
+Netty threads: 32
+Netty client threads: 0
+Default workers per model: 12
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /home/model-server/wf-store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2024-08-23T21:03:25,898 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.1
+TS Home: /home/venv/lib/python3.9/site-packages
+Current directory: /codes
+Temp directory: /home/model-server/tmp
+Metrics config path: /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 0
+Number of CPUs: 12
+Max heap size: 3984 M
+Python executable: /home/venv/bin/python
+Config file: /home/model-server/config.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /home/model-server/model-store
+Initial Models: mnist=mnist.mar
+Log dir: /codes/logs
+Metrics dir: /codes/logs
+Netty threads: 32
+Netty client threads: 0
+Default workers per model: 12
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /home/model-server/wf-store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2024-08-23T21:03:25,922 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-08-23T21:03:25,922 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-08-23T21:03:25,967 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: mnist.mar
+2024-08-23T21:03:25,967 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: mnist.mar
+2024-08-23T21:03:26,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 2.0 for model mnist
+2024-08-23T21:03:26,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 2.0 for model mnist
+2024-08-23T21:03:26,118 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 2.0 for model mnist
+2024-08-23T21:03:26,118 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 2.0 for model mnist
+2024-08-23T21:03:26,118 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2024-08-23T21:03:26,118 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2024-08-23T21:03:26,119 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 12
+2024-08-23T21:03:26,119 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 12
+2024-08-23T21:03:26,137 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9004, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9002, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,138 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9005, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,138 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9006, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9001, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,138 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9006, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9004, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9002, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9003, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,138 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9005, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9003, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9001, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,137 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9008, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9007, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9010, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9009, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,142 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9011, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9009, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,142 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9011, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9007, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9010, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,139 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9008, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:03:26,170 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,170 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,436 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-08-23T21:03:26,436 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-08-23T21:03:26,437 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,437 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,440 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2024-08-23T21:03:26,440 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2024-08-23T21:03:26,442 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,442 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-08-23T21:03:26,444 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2024-08-23T21:03:26,444 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2024-08-23T21:03:27,190 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-08-23T21:03:27,190 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-08-23T21:03:27,386 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,390 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:951.5170249938965|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,391 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:4.121284484863281|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,393 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:0.4|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,396 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:13888.7109375|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,397 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1767.84375|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:27,400 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:12.8|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447007
+2024-08-23T21:03:29,305 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9004, pid=166
+2024-08-23T21:03:29,305 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9003, pid=169
+2024-08-23T21:03:29,306 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9005, pid=168
+2024-08-23T21:03:29,306 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9006, pid=165
+2024-08-23T21:03:29,311 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:03:29,305 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9011, pid=173
+2024-08-23T21:03:29,305 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9009, pid=172
+2024-08-23T21:03:29,305 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9007, pid=174
+2024-08-23T21:03:29,310 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:03:29,307 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9001, pid=170
+2024-08-23T21:03:29,306 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=171
+2024-08-23T21:03:29,323 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:03:29,325 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:03:29,306 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9010, pid=182
+2024-08-23T21:03:29,308 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9002, pid=167
+2024-08-23T21:03:29,310 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:03:29,327 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:03:29,322 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:03:29,311 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:03:29,322 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:03:29,329 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,314 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:03:29,328 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:03:29,329 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9008, pid=183
+2024-08-23T21:03:29,331 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - [PID]174
+2024-08-23T21:03:29,331 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,332 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,332 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,332 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,332 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:03:29,335 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,336 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - [PID]166
+2024-08-23T21:03:29,337 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,337 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,337 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,338 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,339 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,339 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - [PID]169
+2024-08-23T21:03:29,340 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,341 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,338 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,341 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,343 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,337 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,341 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,344 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - [PID]173
+2024-08-23T21:03:29,346 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - [PID]167
+2024-08-23T21:03:29,342 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - [PID]172
+2024-08-23T21:03:29,348 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,341 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,343 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - [PID]170
+2024-08-23T21:03:29,344 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,349 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,344 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,348 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,351 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - [PID]171
+2024-08-23T21:03:29,351 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - [PID]168
+2024-08-23T21:03:29,351 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,352 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,348 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,352 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,351 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,352 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:03:29,352 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:03:29,348 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,352 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:03:29,352 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:03:29,349 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,348 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,350 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,350 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,349 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,344 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - [PID]182
+2024-08-23T21:03:29,356 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,356 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,350 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,354 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,352 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,352 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,352 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:03:29,352 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,348 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,362 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,348 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,362 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,352 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:03:29,352 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:03:29,359 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:03:29,359 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:03:29,349 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,357 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:03:29,365 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:03:29,355 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,356 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,365 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:03:29,358 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,363 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:03:29,361 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:03:29,352 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:03:29,362 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,367 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - [PID]183
+2024-08-23T21:03:29,363 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:03:29,366 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:03:29,363 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:03:29,368 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,368 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,369 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:03:29,368 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,366 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - [PID]165
+2024-08-23T21:03:29,363 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:03:29,369 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:03:29,370 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:03:29,366 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:03:29,361 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:03:29,370 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,370 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-mnist_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:03:29,370 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,373 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:03:29,371 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:03:29,373 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:03:29,378 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9003.
+2024-08-23T21:03:29,379 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9005.
+2024-08-23T21:03:29,379 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9001.
+2024-08-23T21:03:29,379 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9007.
+2024-08-23T21:03:29,378 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9010.
+2024-08-23T21:03:29,380 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9009.
+2024-08-23T21:03:29,379 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9002.
+2024-08-23T21:03:29,381 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9008.
+2024-08-23T21:03:29,378 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9004.
+2024-08-23T21:03:29,381 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9011.
+2024-08-23T21:03:29,379 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-08-23T21:03:29,382 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9006.
+2024-08-23T21:03:29,384 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,384 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,385 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,385 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,384 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,384 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,384 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,386 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,386 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,389 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,389 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,389 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,385 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,385 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,391 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009391
+2024-08-23T21:03:29,391 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009391
+2024-08-23T21:03:29,384 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,385 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,389 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,386 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,386 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,389 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,384 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,384 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,389 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009389
+2024-08-23T21:03:29,386 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,385 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,385 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,384 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,385 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009385
+2024-08-23T21:03:29,398 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,386 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009386
+2024-08-23T21:03:29,384 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447009384
+2024-08-23T21:03:29,397 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009397
+2024-08-23T21:03:29,398 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,398 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,397 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009397
+2024-08-23T21:03:29,398 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,399 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009399
+2024-08-23T21:03:29,398 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,399 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009399
+2024-08-23T21:03:29,400 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009400
+2024-08-23T21:03:29,398 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009398
+2024-08-23T21:03:29,399 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009399
+2024-08-23T21:03:29,400 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009400
+2024-08-23T21:03:29,400 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009400
+2024-08-23T21:03:29,399 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009399
+2024-08-23T21:03:29,400 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447009400
+2024-08-23T21:03:29,460 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,460 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,467 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,467 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,467 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,481 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,481 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,481 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,481 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,484 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,484 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,481 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,485 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,488 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,487 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,490 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,485 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,490 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,489 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,495 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,519 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,525 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,527 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,533 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,534 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,538 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,537 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,541 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,544 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,548 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,547 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,569 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,546 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,570 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,572 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,571 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,581 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,571 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,574 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,583 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,579 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-08-23T21:03:29,583 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,583 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,584 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,585 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:29,588 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:03:29,591 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:03:29,592 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:03:32,123 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,125 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,125 [INFO ] W-9003-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,125 [INFO ] W-9002-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,123 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,131 [INFO ] W-9009-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,133 [INFO ] W-9004-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,132 [INFO ] W-9006-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,134 [INFO ] W-9011-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,142 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,145 [INFO ] W-9008-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,147 [INFO ] W-9001-mnist_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:03:32,149 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2756
+2024-08-23T21:03:32,149 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,150 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,150 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2750
+2024-08-23T21:03:32,149 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2746
+2024-08-23T21:03:32,149 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2747
+2024-08-23T21:03:32,149 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2746
+2024-08-23T21:03:32,150 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2750
+2024-08-23T21:03:32,150 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,150 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2760
+2024-08-23T21:03:32,149 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2756
+2024-08-23T21:03:32,150 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,149 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2752
+2024-08-23T21:03:32,150 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2754
+2024-08-23T21:03:32,151 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,151 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,151 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,150 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2750
+2024-08-23T21:03:32,149 [INFO ] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2747
+2024-08-23T21:03:32,149 [INFO ] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2746
+2024-08-23T21:03:32,149 [INFO ] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,150 [INFO ] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2750
+2024-08-23T21:03:32,149 [INFO ] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2746
+2024-08-23T21:03:32,151 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,150 [INFO ] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2760
+2024-08-23T21:03:32,151 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,149 [INFO ] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2752
+2024-08-23T21:03:32,150 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2748
+2024-08-23T21:03:32,154 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,154 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,154 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,153 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,153 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,152 [INFO ] W-9005-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6015.0|#WorkerName:W-9005-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,153 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,155 [INFO ] W-9000-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6021.0|#WorkerName:W-9000-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,153 [DEBUG] W-9003-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,156 [INFO ] W-9005-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:21.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,155 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,153 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,155 [DEBUG] W-9008-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,154 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,151 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,154 [DEBUG] W-9009-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,150 [INFO ] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2754
+2024-08-23T21:03:32,154 [INFO ] W-9007-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6017.0|#WorkerName:W-9007-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,157 [INFO ] W-9003-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6020.0|#WorkerName:W-9003-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,154 [DEBUG] W-9006-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,153 [DEBUG] W-9001-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,153 [DEBUG] W-9011-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,160 [INFO ] W-9007-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:26.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,161 [INFO ] W-9000-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:28.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,153 [DEBUG] W-9004-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,159 [INFO ] W-9010-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6021.0|#WorkerName:W-9010-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,159 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,158 [INFO ] W-9008-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6020.0|#WorkerName:W-9008-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,162 [INFO ] W-9010-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:22.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,161 [INFO ] W-9001-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6026.0|#WorkerName:W-9001-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,163 [INFO ] W-9008-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:33.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,161 [INFO ] W-9011-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6022.0|#WorkerName:W-9011-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,162 [INFO ] W-9003-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:31.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,159 [DEBUG] W-9002-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-mnist_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:03:32,163 [INFO ] W-9004-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6026.0|#WorkerName:W-9004-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,160 [INFO ] W-9006-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6023.0|#WorkerName:W-9006-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,162 [INFO ] W-9009-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6024.0|#WorkerName:W-9009-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,164 [INFO ] W-9011-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:30.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,164 [INFO ] W-9004-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:30.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,164 [INFO ] W-9002-mnist_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:6028.0|#WorkerName:W-9002-mnist_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,164 [INFO ] W-9001-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:32.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,165 [INFO ] W-9009-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:29.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,164 [INFO ] W-9006-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:18.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:32,165 [INFO ] W-9002-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:26.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447012
+2024-08-23T21:03:41,453 [INFO ] epollEventLoopGroup-3-1 TS_METRICS - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:41,459 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447021458
+2024-08-23T21:03:41,459 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447021458
+2024-08-23T21:03:41,460 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447021460
+2024-08-23T21:03:41,460 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447021460
+2024-08-23T21:03:41,462 [INFO ] W-9005-mnist_2.0-stdout MODEL_LOG - Backend received inference at: 1724447021
+2024-08-23T21:03:41,514 [WARN ] W-9005-mnist_2.0-stderr MODEL_LOG - /home/venv/lib/python3.9/site-packages/torch/nn/functional.py:1374: UserWarning: dropout2d: Received a 2-D input to dropout2d, which is deprecated and will result in an error in a future release. To retain the behavior and silence this warning, please use dropout instead. Note that dropout2d exists to provide channel-wise dropout on inputs with 2 spatial dimensions, a channel dimension, and an optional batch dimension (i.e. 3D or 4D inputs).
+2024-08-23T21:03:41,515 [WARN ] W-9005-mnist_2.0-stderr MODEL_LOG -   warnings.warn(warn_msg)
+2024-08-23T21:03:41,516 [INFO ] W-9005-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:54.37|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447021,99e395de-3b0f-4761-b387-c70d25949d0a, pattern=[METRICS]
+2024-08-23T21:03:41,516 [INFO ] W-9005-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:54.37|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447021,99e395de-3b0f-4761-b387-c70d25949d0a, pattern=[METRICS]
+2024-08-23T21:03:41,519 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId 99e395de-3b0f-4761-b387-c70d25949d0a
+2024-08-23T21:03:41,517 [INFO ] W-9005-mnist_2.0-stdout MODEL_METRICS - HandlerTime.ms:54.37|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:99e395de-3b0f-4761-b387-c70d25949d0a,timestamp:1724447021
+2024-08-23T21:03:41,519 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId 99e395de-3b0f-4761-b387-c70d25949d0a
+2024-08-23T21:03:41,520 [INFO ] W-9005-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:54.78|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447021,99e395de-3b0f-4761-b387-c70d25949d0a, pattern=[METRICS]
+2024-08-23T21:03:41,520 [INFO ] W-9005-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:54.78|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447021,99e395de-3b0f-4761-b387-c70d25949d0a, pattern=[METRICS]
+2024-08-23T21:03:41,521 [INFO ] W-9005-mnist_2.0-stdout MODEL_METRICS - PredictionTime.ms:54.78|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:99e395de-3b0f-4761-b387-c70d25949d0a,timestamp:1724447021
+2024-08-23T21:03:41,520 [INFO ] W-9005-mnist_2.0 ACCESS_LOG - /172.18.0.2:55084 "POST /predictions/mnist HTTP/1.1" 200 91
+2024-08-23T21:03:41,522 [INFO ] W-9005-mnist_2.0 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:41,524 [INFO ] W-9005-mnist_2.0 TS_METRICS - ts_inference_latency_microseconds.Microseconds:63110.9|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:41,525 [INFO ] W-9005-mnist_2.0 TS_METRICS - ts_queue_latency_microseconds.Microseconds:1065.436|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:41,526 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 1065436, Backend time ns: 68307673
+2024-08-23T21:03:41,526 [DEBUG] W-9005-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 1065436, Backend time ns: 68307673
+2024-08-23T21:03:41,527 [INFO ] W-9005-mnist_2.0 TS_METRICS - QueueTime.Milliseconds:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:41,527 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 58
+2024-08-23T21:03:41,527 [INFO ] W-9005-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 58
+2024-08-23T21:03:41,528 [INFO ] W-9005-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:12.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447021
+2024-08-23T21:03:48,767 [INFO ] epollEventLoopGroup-3-2 TS_METRICS - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:48,768 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447028768
+2024-08-23T21:03:48,768 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447028768
+2024-08-23T21:03:48,769 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447028769
+2024-08-23T21:03:48,769 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447028769
+2024-08-23T21:03:48,778 [INFO ] W-9007-mnist_2.0-stdout MODEL_LOG - Backend received inference at: 1724447028
+2024-08-23T21:03:48,786 [INFO ] W-9007-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:13.85|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447028,d8c3ea37-10c3-4440-b845-51d78ea712ef, pattern=[METRICS]
+2024-08-23T21:03:48,786 [INFO ] W-9007-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:13.85|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447028,d8c3ea37-10c3-4440-b845-51d78ea712ef, pattern=[METRICS]
+2024-08-23T21:03:48,786 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId d8c3ea37-10c3-4440-b845-51d78ea712ef
+2024-08-23T21:03:48,786 [WARN ] W-9007-mnist_2.0-stderr MODEL_LOG - /home/venv/lib/python3.9/site-packages/torch/nn/functional.py:1374: UserWarning: dropout2d: Received a 2-D input to dropout2d, which is deprecated and will result in an error in a future release. To retain the behavior and silence this warning, please use dropout instead. Note that dropout2d exists to provide channel-wise dropout on inputs with 2 spatial dimensions, a channel dimension, and an optional batch dimension (i.e. 3D or 4D inputs).
+2024-08-23T21:03:48,786 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId d8c3ea37-10c3-4440-b845-51d78ea712ef
+2024-08-23T21:03:48,787 [WARN ] W-9007-mnist_2.0-stderr MODEL_LOG -   warnings.warn(warn_msg)
+2024-08-23T21:03:48,787 [INFO ] W-9007-mnist_2.0-stdout MODEL_METRICS - HandlerTime.ms:13.85|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:d8c3ea37-10c3-4440-b845-51d78ea712ef,timestamp:1724447028
+2024-08-23T21:03:48,787 [INFO ] W-9007-mnist_2.0 ACCESS_LOG - /172.18.0.2:37428 "POST /predictions/mnist HTTP/1.1" 200 33
+2024-08-23T21:03:48,788 [INFO ] W-9007-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:14.09|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447028,d8c3ea37-10c3-4440-b845-51d78ea712ef, pattern=[METRICS]
+2024-08-23T21:03:48,789 [INFO ] W-9007-mnist_2.0 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:48,788 [INFO ] W-9007-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:14.09|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447028,d8c3ea37-10c3-4440-b845-51d78ea712ef, pattern=[METRICS]
+2024-08-23T21:03:48,790 [INFO ] W-9007-mnist_2.0 TS_METRICS - ts_inference_latency_microseconds.Microseconds:19206.168|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:48,790 [INFO ] W-9007-mnist_2.0-stdout MODEL_METRICS - PredictionTime.ms:14.09|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:d8c3ea37-10c3-4440-b845-51d78ea712ef,timestamp:1724447028
+2024-08-23T21:03:48,792 [INFO ] W-9007-mnist_2.0 TS_METRICS - ts_queue_latency_microseconds.Microseconds:193.006|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:48,793 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 193006, Backend time ns: 24647958
+2024-08-23T21:03:48,793 [DEBUG] W-9007-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 193006, Backend time ns: 24647958
+2024-08-23T21:03:48,793 [INFO ] W-9007-mnist_2.0 TS_METRICS - QueueTime.Milliseconds:0.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:48,794 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 17
+2024-08-23T21:03:48,794 [INFO ] W-9007-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 17
+2024-08-23T21:03:48,795 [INFO ] W-9007-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:10.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447028
+2024-08-23T21:03:53,402 [INFO ] epollEventLoopGroup-3-3 TS_METRICS - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:03:53,404 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447033404
+2024-08-23T21:03:53,404 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447033404
+2024-08-23T21:03:53,405 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447033405
+2024-08-23T21:03:53,405 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447033405
+2024-08-23T21:03:53,409 [INFO ] W-9000-mnist_2.0-stdout MODEL_LOG - Backend received inference at: 1724447033
+2024-08-23T21:03:53,418 [INFO ] W-9000-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:11.18|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447033,aaf44d44-9531-4805-a4a4-c39a298a56c4, pattern=[METRICS]
+2024-08-23T21:03:53,418 [INFO ] W-9000-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]HandlerTime.Milliseconds:11.18|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447033,aaf44d44-9531-4805-a4a4-c39a298a56c4, pattern=[METRICS]
+2024-08-23T21:03:53,419 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId aaf44d44-9531-4805-a4a4-c39a298a56c4
+2024-08-23T21:03:53,418 [WARN ] W-9000-mnist_2.0-stderr MODEL_LOG - /home/venv/lib/python3.9/site-packages/torch/nn/functional.py:1374: UserWarning: dropout2d: Received a 2-D input to dropout2d, which is deprecated and will result in an error in a future release. To retain the behavior and silence this warning, please use dropout instead. Note that dropout2d exists to provide channel-wise dropout on inputs with 2 spatial dimensions, a channel dimension, and an optional batch dimension (i.e. 3D or 4D inputs).
+2024-08-23T21:03:53,419 [INFO ] W-9000-mnist_2.0-stdout MODEL_METRICS - HandlerTime.ms:11.18|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:aaf44d44-9531-4805-a4a4-c39a298a56c4,timestamp:1724447033
+2024-08-23T21:03:53,419 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.BatchAggregator - Sending response for jobId aaf44d44-9531-4805-a4a4-c39a298a56c4
+2024-08-23T21:03:53,419 [WARN ] W-9000-mnist_2.0-stderr MODEL_LOG -   warnings.warn(warn_msg)
+2024-08-23T21:03:53,420 [INFO ] W-9000-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:11.35|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447033,aaf44d44-9531-4805-a4a4-c39a298a56c4, pattern=[METRICS]
+2024-08-23T21:03:53,420 [INFO ] W-9000-mnist_2.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - result=[METRICS]PredictionTime.Milliseconds:11.35|#ModelName:mnist,Level:Model|#type:GAUGE|#hostname:85e53c0ac629,1724447033,aaf44d44-9531-4805-a4a4-c39a298a56c4, pattern=[METRICS]
+2024-08-23T21:03:53,420 [INFO ] W-9000-mnist_2.0 ACCESS_LOG - /172.18.0.2:37436 "POST /predictions/mnist HTTP/1.1" 200 29
+2024-08-23T21:03:53,421 [INFO ] W-9000-mnist_2.0-stdout MODEL_METRICS - PredictionTime.ms:11.35|#ModelName:mnist,Level:Model|#hostname:85e53c0ac629,requestID:aaf44d44-9531-4805-a4a4-c39a298a56c4,timestamp:1724447033
+2024-08-23T21:03:53,421 [INFO ] W-9000-mnist_2.0 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:03:53,422 [INFO ] W-9000-mnist_2.0 TS_METRICS - ts_inference_latency_microseconds.Microseconds:16035.36|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:03:53,425 [INFO ] W-9000-mnist_2.0 TS_METRICS - ts_queue_latency_microseconds.Microseconds:196.907|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:03:53,428 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 196907, Backend time ns: 23472820
+2024-08-23T21:03:53,428 [DEBUG] W-9000-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 196907, Backend time ns: 23472820
+2024-08-23T21:03:53,429 [INFO ] W-9000-mnist_2.0 TS_METRICS - QueueTime.Milliseconds:0.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:03:53,429 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 14
+2024-08-23T21:03:53,429 [INFO ] W-9000-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 14
+2024-08-23T21:03:53,430 [INFO ] W-9000-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:12.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447033
+2024-08-23T21:04:15,545 [INFO ] epollEventLoopGroup-3-4 TS_METRICS - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:85e53c0ac629,timestamp:1724447055
+2024-08-23T21:04:15,547 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447055547
+2024-08-23T21:04:15,547 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd PREDICT repeats 1 to backend at: 1724447055547
+2024-08-23T21:04:15,548 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447055548
+2024-08-23T21:04:15,548 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447055548
+2024-08-23T21:04:15,555 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Backend received inference at: 1724447055
+2024-08-23T21:04:15,823 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Invoking custom service failed.
+2024-08-23T21:04:15,824 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-08-23T21:04:15,824 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/ts/service.py", line 135, in predict
+2024-08-23T21:04:15,825 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2024-08-23T21:04:15,826 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/ts/torch_handler/base_handler.py", line 458, in handle
+2024-08-23T21:04:15,827 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     output = self.inference(data_preprocess)
+2024-08-23T21:04:15,827 [INFO ] W-9010-mnist_2.0 ACCESS_LOG - /172.18.0.2:52040 "POST /predictions/mnist HTTP/1.1" 503 304
+2024-08-23T21:04:15,828 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/ts/handler_utils/timer.py", line 63, in wrap_func
+2024-08-23T21:04:15,828 [INFO ] W-9010-mnist_2.0 TS_METRICS - Requests5XX.Count:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447055
+2024-08-23T21:04:15,828 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     result = func(self, *args, **kwargs)
+2024-08-23T21:04:15,829 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 354911, Inference time ns: 282344500
+2024-08-23T21:04:15,829 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/ts/torch_handler/base_handler.py", line 401, in inference
+2024-08-23T21:04:15,829 [DEBUG] W-9010-mnist_2.0 org.pytorch.serve.job.RestJob - Waiting time ns: 354911, Inference time ns: 282344500
+2024-08-23T21:04:15,830 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 274
+2024-08-23T21:04:15,830 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     results = self.model(marshalled_data, *args, **kwargs)
+2024-08-23T21:04:15,830 [INFO ] W-9010-mnist_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 274
+2024-08-23T21:04:15,830 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+2024-08-23T21:04:15,831 [INFO ] W-9010-mnist_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:9.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447055
+2024-08-23T21:04:15,832 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     return self._call_impl(*args, **kwargs)
+2024-08-23T21:04:15,833 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+2024-08-23T21:04:15,833 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     return forward_call(*args, **kwargs)
+2024-08-23T21:04:15,834 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/model-server/tmp/models/2ab696f9669f446c9e03c9bd8f9b396d/mnist.py", line 23, in forward
+2024-08-23T21:04:15,834 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     x = self.fc1(x)
+2024-08-23T21:04:15,835 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+2024-08-23T21:04:15,835 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     return self._call_impl(*args, **kwargs)
+2024-08-23T21:04:15,836 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+2024-08-23T21:04:15,836 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     return forward_call(*args, **kwargs)
+2024-08-23T21:04:15,837 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -   File "/home/venv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 116, in forward
+2024-08-23T21:04:15,838 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG -     return F.linear(input, self.weight, self.bias)
+2024-08-23T21:04:15,838 [INFO ] W-9010-mnist_2.0-stdout MODEL_LOG - RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x7470336 and 9216x128)
+2024-08-23T21:04:27,224 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:50.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,225 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:951.5169486999512|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,226 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:4.121360778808594|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,227 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:0.4|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,228 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:11945.671875|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,229 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:3707.4296875|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:04:27,230 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:25.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447067
+2024-08-23T21:05:08,863 [DEBUG] main org.pytorch.serve.util.ConfigManager - xpu-smi not available or failed: Cannot run program "xpu-smi": error=2, No such file or directory
+2024-08-23T21:05:08,863 [DEBUG] main org.pytorch.serve.util.ConfigManager - xpu-smi not available or failed: Cannot run program "xpu-smi": error=2, No such file or directory
+2024-08-23T21:05:08,870 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-08-23T21:05:08,870 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-08-23T21:05:08,883 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-08-23T21:05:08,883 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-08-23T21:05:08,978 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+2024-08-23T21:05:08,978 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+2024-08-23T21:05:09,194 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.1
+TS Home: /home/venv/lib/python3.9/site-packages
+Current directory: /codes
+Temp directory: /home/model-server/tmp
+Metrics config path: /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 0
+Number of CPUs: 12
+Max heap size: 3984 M
+Python executable: /home/venv/bin/python
+Config file: /home/model-server/config.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /home/model-server/model-store
+Initial Models: chest_xray=chest_xray.mar
+Log dir: /codes/logs
+Metrics dir: /codes/logs
+Netty threads: 32
+Netty client threads: 0
+Default workers per model: 12
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /home/model-server/wf-store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2024-08-23T21:05:09,194 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.1
+TS Home: /home/venv/lib/python3.9/site-packages
+Current directory: /codes
+Temp directory: /home/model-server/tmp
+Metrics config path: /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 0
+Number of CPUs: 12
+Max heap size: 3984 M
+Python executable: /home/venv/bin/python
+Config file: /home/model-server/config.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /home/model-server/model-store
+Initial Models: chest_xray=chest_xray.mar
+Log dir: /codes/logs
+Metrics dir: /codes/logs
+Netty threads: 32
+Netty client threads: 0
+Default workers per model: 12
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /home/model-server/wf-store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2024-08-23T21:05:09,209 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-08-23T21:05:09,209 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-08-23T21:05:09,248 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: chest_xray.mar
+2024-08-23T21:05:09,248 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: chest_xray.mar
+2024-08-23T21:05:09,618 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 2.0 for model chest_xray
+2024-08-23T21:05:09,618 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 2.0 for model chest_xray
+2024-08-23T21:05:09,619 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 2.0 for model chest_xray
+2024-08-23T21:05:09,619 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 2.0 for model chest_xray
+2024-08-23T21:05:09,620 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model chest_xray loaded.
+2024-08-23T21:05:09,620 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model chest_xray loaded.
+2024-08-23T21:05:09,621 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: chest_xray, count: 12
+2024-08-23T21:05:09,621 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: chest_xray, count: 12
+2024-08-23T21:05:09,632 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9004, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9002, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9001, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9004, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9006, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9005, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9003, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9011, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9009, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9001, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9005, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,634 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9010, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9008, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9006, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,634 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9010, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9003, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9007, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,631 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9002, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,632 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9007, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9011, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9008, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,633 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/venv/bin/python, /home/venv/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9009, --metrics-config, /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml]
+2024-08-23T21:05:09,646 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-08-23T21:05:09,646 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-08-23T21:05:09,975 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-08-23T21:05:09,975 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-08-23T21:05:09,975 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2024-08-23T21:05:09,975 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2024-08-23T21:05:10,041 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2024-08-23T21:05:10,041 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2024-08-23T21:05:10,042 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-08-23T21:05:10,042 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-08-23T21:05:10,043 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2024-08-23T21:05:10,043 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2024-08-23T21:05:10,942 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-08-23T21:05:10,942 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-08-23T21:05:11,223 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,225 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:951.4997138977051|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,241 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:4.1385955810546875|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,246 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:0.4|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,251 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:13634.421875|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,252 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:2018.77734375|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:11,254 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:14.4|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447111
+2024-08-23T21:05:12,066 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9005, pid=560
+2024-08-23T21:05:12,069 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:05:12,087 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9009, pid=569
+2024-08-23T21:05:12,092 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,095 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:05:12,096 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - [PID]560
+2024-08-23T21:05:12,099 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,099 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,099 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,102 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,117 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:05:12,117 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9005
+2024-08-23T21:05:12,118 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,118 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - [PID]569
+2024-08-23T21:05:12,120 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,120 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,120 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,121 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:05:12,124 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,121 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9009
+2024-08-23T21:05:12,148 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9009.
+2024-08-23T21:05:12,148 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9005.
+2024-08-23T21:05:12,153 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112153
+2024-08-23T21:05:12,153 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112153
+2024-08-23T21:05:12,153 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112153
+2024-08-23T21:05:12,153 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112153
+2024-08-23T21:05:12,163 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112163
+2024-08-23T21:05:12,163 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112163
+2024-08-23T21:05:12,170 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112170
+2024-08-23T21:05:12,170 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112170
+2024-08-23T21:05:12,217 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9011, pid=573
+2024-08-23T21:05:12,220 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:05:12,218 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9001, pid=559
+2024-08-23T21:05:12,230 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:05:12,231 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,232 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - [PID]559
+2024-08-23T21:05:12,234 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,234 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,235 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:05:12,235 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9001
+2024-08-23T21:05:12,234 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,243 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,242 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,247 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - [PID]573
+2024-08-23T21:05:12,250 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,250 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,252 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:05:12,252 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9011
+2024-08-23T21:05:12,250 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,255 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,251 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9001.
+2024-08-23T21:05:12,259 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112258
+2024-08-23T21:05:12,260 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,259 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112258
+2024-08-23T21:05:12,263 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,265 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,267 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,268 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,279 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112270
+2024-08-23T21:05:12,270 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112270
+2024-08-23T21:05:12,268 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,270 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9011.
+2024-08-23T21:05:12,270 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112270
+2024-08-23T21:05:12,279 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,280 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,279 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112270
+2024-08-23T21:05:12,279 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9008, pid=567
+2024-08-23T21:05:12,285 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112285
+2024-08-23T21:05:12,285 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:05:12,285 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112285
+2024-08-23T21:05:12,314 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9006, pid=562
+2024-08-23T21:05:12,316 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,320 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:05:12,329 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - [PID]567
+2024-08-23T21:05:12,330 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,346 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9007, pid=566
+2024-08-23T21:05:12,351 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,331 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,351 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9010, pid=563
+2024-08-23T21:05:12,350 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,351 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,353 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,360 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,353 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:05:12,362 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,365 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - [PID]562
+2024-08-23T21:05:12,366 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,351 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:05:12,366 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,363 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:05:12,366 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,368 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,364 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9002, pid=565
+2024-08-23T21:05:12,363 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9008
+2024-08-23T21:05:12,370 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - [PID]566
+2024-08-23T21:05:12,364 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,374 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112374
+2024-08-23T21:05:12,369 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,370 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:05:12,374 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112374
+2024-08-23T21:05:12,374 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9008.
+2024-08-23T21:05:12,371 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9004, pid=557
+2024-08-23T21:05:12,382 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,383 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:05:12,377 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,384 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - [PID]563
+2024-08-23T21:05:12,384 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,384 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,371 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:05:12,385 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,385 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,374 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,386 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:05:12,370 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9006
+2024-08-23T21:05:12,382 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112382
+2024-08-23T21:05:12,382 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112382
+2024-08-23T21:05:12,377 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,377 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,397 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:05:12,397 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9007
+2024-08-23T21:05:12,395 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,386 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9010
+2024-08-23T21:05:12,399 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,399 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,398 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,401 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,401 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - [PID]565
+2024-08-23T21:05:12,403 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,403 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,403 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,395 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=561
+2024-08-23T21:05:12,411 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112410
+2024-08-23T21:05:12,412 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:05:12,410 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9007.
+2024-08-23T21:05:12,411 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112410
+2024-08-23T21:05:12,411 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112410
+2024-08-23T21:05:12,412 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:05:12,409 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9006.
+2024-08-23T21:05:12,410 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,411 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112410
+2024-08-23T21:05:12,412 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9002
+2024-08-23T21:05:12,414 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112414
+2024-08-23T21:05:12,421 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112416
+2024-08-23T21:05:12,421 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112416
+2024-08-23T21:05:12,414 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112414
+2024-08-23T21:05:12,423 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,430 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,438 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - [PID]557
+2024-08-23T21:05:12,431 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112430
+2024-08-23T21:05:12,431 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112430
+2024-08-23T21:05:12,435 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,441 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,444 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - [PID]561
+2024-08-23T21:05:12,448 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,448 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,450 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:05:12,450 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-08-23T21:05:12,447 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,445 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,445 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,470 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,442 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112442
+2024-08-23T21:05:12,442 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112442
+2024-08-23T21:05:12,470 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9002.
+2024-08-23T21:05:12,470 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:05:12,470 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9004
+2024-08-23T21:05:12,470 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112470
+2024-08-23T21:05:12,452 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,448 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,440 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,470 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112470
+2024-08-23T21:05:12,487 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112487
+2024-08-23T21:05:12,483 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,482 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,471 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9003, pid=564
+2024-08-23T21:05:12,432 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9010.
+2024-08-23T21:05:12,487 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112487
+2024-08-23T21:05:12,489 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-08-23T21:05:12,503 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,489 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112489
+2024-08-23T21:05:12,486 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,502 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,504 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112504
+2024-08-23T21:05:12,504 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112504
+2024-08-23T21:05:12,512 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9004.
+2024-08-23T21:05:12,513 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112513
+2024-08-23T21:05:12,513 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112513
+2024-08-23T21:05:12,502 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,500 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:05:12,512 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,489 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112489
+2024-08-23T21:05:12,510 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,516 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Successfully loaded /home/venv/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2024-08-23T21:05:12,512 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,518 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112517
+2024-08-23T21:05:12,518 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112517
+2024-08-23T21:05:12,515 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,519 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - [PID]564
+2024-08-23T21:05:12,530 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,530 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-chest_xray_2.0 State change null -> WORKER_STARTED
+2024-08-23T21:05:12,532 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:05:12,532 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9003
+2024-08-23T21:05:12,519 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,529 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Torch worker started.
+2024-08-23T21:05:12,528 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,535 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Python runtime: 3.9.19
+2024-08-23T21:05:12,550 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,571 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,572 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,572 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,572 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,573 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,574 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,571 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,570 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,578 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,578 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,579 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,579 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:12,600 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112600
+2024-08-23T21:05:12,600 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD repeats 1 to backend at: 1724447112600
+2024-08-23T21:05:12,600 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112600
+2024-08-23T21:05:12,600 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Looping backend response at: 1724447112600
+2024-08-23T21:05:12,599 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9003.
+2024-08-23T21:05:12,637 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - model_name: chest_xray, batchSize: 1
+2024-08-23T21:05:12,643 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-08-23T21:05:12,648 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-08-23T21:05:12,649 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-08-23T21:05:14,179 [INFO ] W-9005-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,202 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2028
+2024-08-23T21:05:14,202 [INFO ] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2028
+2024-08-23T21:05:14,205 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,205 [DEBUG] W-9005-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9005-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,209 [INFO ] W-9005-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4577.0|#WorkerName:W-9005-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,214 [INFO ] W-9005-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:33.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,246 [INFO ] W-9009-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,247 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2083
+2024-08-23T21:05:14,247 [INFO ] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2083
+2024-08-23T21:05:14,248 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,248 [DEBUG] W-9009-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9009-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,249 [INFO ] W-9009-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4616.0|#WorkerName:W-9009-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,250 [INFO ] W-9009-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:14.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,269 [INFO ] W-9001-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,270 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1988
+2024-08-23T21:05:14,270 [INFO ] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1988
+2024-08-23T21:05:14,272 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,272 [DEBUG] W-9001-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9001-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,274 [INFO ] W-9001-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4643.0|#WorkerName:W-9001-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,277 [INFO ] W-9001-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:31.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,336 [INFO ] W-9011-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,339 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2040
+2024-08-23T21:05:14,339 [INFO ] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2040
+2024-08-23T21:05:14,345 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,345 [DEBUG] W-9011-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9011-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,352 [INFO ] W-9011-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4719.0|#WorkerName:W-9011-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,362 [INFO ] W-9011-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:52.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,388 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1910
+2024-08-23T21:05:14,388 [INFO ] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1910
+2024-08-23T21:05:14,392 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,385 [INFO ] W-9010-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,392 [DEBUG] W-9010-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9010-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,402 [INFO ] W-9010-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4765.0|#WorkerName:W-9010-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,408 [INFO ] W-9010-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:68.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,411 [INFO ] W-9000-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,415 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1891
+2024-08-23T21:05:14,415 [INFO ] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1891
+2024-08-23T21:05:14,428 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,428 [DEBUG] W-9000-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9000-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,431 [INFO ] W-9000-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4801.0|#WorkerName:W-9000-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,432 [INFO ] W-9000-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:52.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,433 [INFO ] W-9008-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,434 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2038
+2024-08-23T21:05:14,434 [INFO ] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2038
+2024-08-23T21:05:14,435 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,435 [DEBUG] W-9008-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9008-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,437 [INFO ] W-9008-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4804.0|#WorkerName:W-9008-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,441 [INFO ] W-9008-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:29.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,455 [INFO ] W-9004-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,459 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1945
+2024-08-23T21:05:14,459 [INFO ] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1945
+2024-08-23T21:05:14,459 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,459 [DEBUG] W-9004-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9004-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,461 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1860
+2024-08-23T21:05:14,460 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2033
+2024-08-23T21:05:14,461 [INFO ] W-9003-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,460 [INFO ] W-9007-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,461 [INFO ] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1860
+2024-08-23T21:05:14,460 [INFO ] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2033
+2024-08-23T21:05:14,464 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,462 [INFO ] W-9004-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4830.0|#WorkerName:W-9004-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,464 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,464 [DEBUG] W-9003-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9003-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,464 [DEBUG] W-9007-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9007-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,466 [INFO ] W-9004-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:16.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,467 [INFO ] W-9003-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4835.0|#WorkerName:W-9003-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,468 [INFO ] W-9007-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4837.0|#WorkerName:W-9007-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,469 [INFO ] W-9003-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:9.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,469 [INFO ] W-9007-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:26.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,480 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2054
+2024-08-23T21:05:14,480 [INFO ] W-9006-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,480 [INFO ] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2054
+2024-08-23T21:05:14,480 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1977
+2024-08-23T21:05:14,480 [INFO ] W-9002-chest_xray_2.0-stdout MODEL_LOG - '/home/model-server/tmp/models/08841a7ad4ed479584d767c6202923f6/index_to_name.json' is missing. Inference output will not include class name.
+2024-08-23T21:05:14,481 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,480 [INFO ] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1977
+2024-08-23T21:05:14,481 [DEBUG] W-9006-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9006-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,482 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,482 [DEBUG] W-9002-chest_xray_2.0 org.pytorch.serve.wlm.WorkerThread - W-9002-chest_xray_2.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2024-08-23T21:05:14,482 [INFO ] W-9006-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4851.0|#WorkerName:W-9006-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,483 [INFO ] W-9006-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:19.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,483 [INFO ] W-9002-chest_xray_2.0 TS_METRICS - WorkerLoadTime.Milliseconds:4851.0|#WorkerName:W-9002-chest_xray_2.0,Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:14,483 [INFO ] W-9002-chest_xray_2.0 TS_METRICS - WorkerThreadTime.Milliseconds:36.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447114
+2024-08-23T21:05:28,968 [INFO ] epollEventLoopGroup-3-1 ACCESS_LOG - /172.18.0.2:50478 "POST /predictions/mnist HTTP/1.1" 404 58
+2024-08-23T21:05:28,969 [INFO ] epollEventLoopGroup-3-1 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447128
+2024-08-23T21:06:10,949 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:33.3|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,950 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:951.4995803833008|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,950 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:4.138729095458984|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,951 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:0.4|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,952 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:11903.73046875|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,952 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:3749.51953125|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
+2024-08-23T21:06:10,953 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:25.3|#Level:Host|#hostname:85e53c0ac629,timestamp:1724447170
